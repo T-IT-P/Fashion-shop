@@ -30,18 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Signin = new System.Windows.Forms.Button();
+            this.buttion_signin = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.show_password_register = new System.Windows.Forms.CheckBox();
+            this.button_signup = new System.Windows.Forms.Button();
+            this.password_register = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Username = new System.Windows.Forms.TextBox();
+            this.username_register = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.password_register_comfirm = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.exit_sign_in = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -61,7 +61,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.Signin);
+            this.panel1.Controls.Add(this.buttion_signin);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-58, -55);
@@ -70,17 +70,17 @@
             this.panel1.Size = new System.Drawing.Size(597, 604);
             this.panel1.TabIndex = 10;
             // 
-            // Signin
+            // buttion_signin
             // 
-            this.Signin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Signin.Location = new System.Drawing.Point(219, 521);
-            this.Signin.Margin = new System.Windows.Forms.Padding(4);
-            this.Signin.Name = "Signin";
-            this.Signin.Size = new System.Drawing.Size(163, 34);
-            this.Signin.TabIndex = 0;
-            this.Signin.Text = "SIGN IN";
-            this.Signin.UseVisualStyleBackColor = true;
-            this.Signin.Click += new System.EventHandler(this.button2_Click);
+            this.buttion_signin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttion_signin.Location = new System.Drawing.Point(219, 521);
+            this.buttion_signin.Margin = new System.Windows.Forms.Padding(4);
+            this.buttion_signin.Name = "buttion_signin";
+            this.buttion_signin.Size = new System.Drawing.Size(163, 34);
+            this.buttion_signin.TabIndex = 0;
+            this.buttion_signin.Text = "SIGN IN";
+            this.buttion_signin.UseVisualStyleBackColor = true;
+            this.buttion_signin.Click += new System.EventHandler(this.button_signin_Click);
             // 
             // label5
             // 
@@ -106,39 +106,41 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // checkBox1
+            // show_password_register
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.checkBox1.Location = new System.Drawing.Point(575, 368);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(162, 27);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "Show Password";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.show_password_register.AutoSize = true;
+            this.show_password_register.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.show_password_register.Location = new System.Drawing.Point(575, 368);
+            this.show_password_register.Name = "show_password_register";
+            this.show_password_register.Size = new System.Drawing.Size(162, 27);
+            this.show_password_register.TabIndex = 18;
+            this.show_password_register.Text = "Show Password";
+            this.show_password_register.UseVisualStyleBackColor = true;
+            this.show_password_register.CheckedChanged += new System.EventHandler(this.show_password_register_CheckedChanged);
             // 
-            // button1
+            // button_signup
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(575, 418);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 37);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "SIGNUP";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_signup.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button_signup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_signup.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_signup.Location = new System.Drawing.Point(575, 418);
+            this.button_signup.Margin = new System.Windows.Forms.Padding(4);
+            this.button_signup.Name = "button_signup";
+            this.button_signup.Size = new System.Drawing.Size(147, 37);
+            this.button_signup.TabIndex = 17;
+            this.button_signup.Text = "SIGNUP";
+            this.button_signup.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // password_register
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(575, 235);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(401, 34);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.TabStop = false;
+            this.password_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.password_register.Location = new System.Drawing.Point(575, 235);
+            this.password_register.Margin = new System.Windows.Forms.Padding(4);
+            this.password_register.Name = "password_register";
+            this.password_register.PasswordChar = '*';
+            this.password_register.Size = new System.Drawing.Size(401, 34);
+            this.password_register.TabIndex = 16;
+            this.password_register.TabStop = false;
             // 
             // label4
             // 
@@ -162,14 +164,14 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Username";
             // 
-            // Username
+            // username_register
             // 
-            this.Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Username.Location = new System.Drawing.Point(575, 139);
-            this.Username.Margin = new System.Windows.Forms.Padding(4);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(401, 30);
-            this.Username.TabIndex = 13;
+            this.username_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.username_register.Location = new System.Drawing.Point(575, 139);
+            this.username_register.Margin = new System.Windows.Forms.Padding(4);
+            this.username_register.Name = "username_register";
+            this.username_register.Size = new System.Drawing.Size(401, 30);
+            this.username_register.TabIndex = 13;
             // 
             // label2
             // 
@@ -179,9 +181,10 @@
             this.label2.Location = new System.Drawing.Point(569, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 35);
+            this.label2.Size = new System.Drawing.Size(171, 35);
             this.label2.TabIndex = 12;
-            this.label2.Text = "SIGN IN";
+            this.label2.Text = "REGISTER";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label6
             // 
@@ -193,15 +196,17 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "X";
             // 
-            // textBox1
+            // password_register_comfirm
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(575, 327);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(401, 34);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.TabStop = false;
+            this.password_register_comfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.password_register_comfirm.Location = new System.Drawing.Point(575, 327);
+            this.password_register_comfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.password_register_comfirm.Name = "password_register_comfirm";
+            this.password_register_comfirm.PasswordChar = '*';
+            this.password_register_comfirm.Size = new System.Drawing.Size(401, 34);
+            this.password_register_comfirm.TabIndex = 20;
+            this.password_register_comfirm.TabStop = false;
+            this.password_register_comfirm.TextChanged += new System.EventHandler(this.password_register_comfirm_TextChanged);
             // 
             // label7
             // 
@@ -232,15 +237,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 542);
             this.Controls.Add(this.exit_sign_in);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password_register_comfirm);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.show_password_register);
+            this.Controls.Add(this.button_signup);
+            this.Controls.Add(this.password_register);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Username);
+            this.Controls.Add(this.username_register);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
@@ -259,18 +264,18 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Signin;
+        private System.Windows.Forms.Button buttion_signin;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox show_password_register;
+        private System.Windows.Forms.Button button_signup;
+        private System.Windows.Forms.TextBox password_register;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox Username;
+        public System.Windows.Forms.TextBox username_register;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox password_register_comfirm;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label exit_sign_in;
     }

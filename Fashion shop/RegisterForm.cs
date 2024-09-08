@@ -47,11 +47,41 @@ namespace Fashion_shop
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_signin_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+
+        }
+
+        private void password_register_comfirm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void show_password_register_CheckedChanged(object sender, EventArgs e)
+        {
+            if (show_password_register.Checked)
+            {
+                password_register.PasswordChar = (char)0;
+                password_register_comfirm.PasswordChar = (char)0;
+            }
+            else
+            {
+                password_register.PasswordChar = '*';
+                password_register_comfirm.PasswordChar = '*';
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
 
         }
     }
