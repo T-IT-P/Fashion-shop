@@ -1,4 +1,4 @@
-﻿create table users
+﻿﻿create table users
 (
   id_user INT primary key identity(1,1),
   username_user varchar(max) NULL,

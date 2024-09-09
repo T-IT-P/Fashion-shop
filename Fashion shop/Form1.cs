@@ -12,7 +12,7 @@ namespace Fashion_shop
 {
     public partial class Form1 : Form
     {
-        SqlConnection connec = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\84839\Documents\fashionshop.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connec = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\VF_IT_06\Documents\DESKTOP-AUDBA01.mdf;Integrated Security=True;Connect Timeout=30");
         public Form1()
         {
             InitializeComponent();
@@ -50,7 +50,7 @@ namespace Fashion_shop
 
         public bool emptyFieds()
         {
-            if(Username.Text == ""|| password.Text == "")
+            if(Username.Text == " " || password.Text == " ")
             {
                 return true;
             }
@@ -72,11 +72,11 @@ namespace Fashion_shop
                     {
                         connec.Open();
                         string slect = "SELECT * From users WHERE username_user = @usern AND password_user = @pass AND status_user = @status";
-                        using(SqlCommand cmd = new SqlCommand(slect, connec))
+                        using(SqlCommand cmd = new SqlCommand(slect,connec))
                         {
-                            cmd.Parameters.AddWithValue("@usern",Username.Text.Trim());
-                            cmd.Parameters.AddWithValue("@pass", password.Text.Trim());
-                            cmd.Parameters.AddWithValue("@status", "Active");
+                            cmd.Parameters.AddWithValue("@usern",Username.Text);
+                            cmd.Parameters.AddWithValue("@pass", password.Text);
+                            cmd.Parameters.AddWithValue("@status","Active");
                             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                             DataTable table = new DataTable();
                             adapter.Fill(table);
