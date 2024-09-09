@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Fashion_shop
 {
-    public partial class FormMain : Form
+    public partial class FormDanhMucSanPham : Form
     {
-        public FormMain()
+        public FormDanhMucSanPham()
         {
             InitializeComponent();
+        }
+
+        private void FormDanhMucSanPham_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -22,27 +27,27 @@ namespace Fashion_shop
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void danhMụcToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e)
         {
 
         }
