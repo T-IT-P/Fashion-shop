@@ -19,7 +19,7 @@ namespace Fashion_shop
           
           
 
-            Application.Run(new RegisterForm());
+            Application.Run(new Form1());
 
         }
     }
