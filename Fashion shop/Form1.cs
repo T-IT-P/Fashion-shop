@@ -83,6 +83,9 @@ namespace Fashion_shop
                             if (table.Rows.Count >= 1)
                             {
                                 MessageBox.Show("ket noi thanh cong", "thong tin message", MessageBoxButtons.OK);
+                                Load l = new Load();
+                                l.Show();
+                                this.Hide();
 
                             }
                             else
