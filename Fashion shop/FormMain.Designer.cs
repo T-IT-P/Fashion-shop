@@ -126,14 +126,14 @@
             // 
             this.kháchHàngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kháchHàngToolStripMenuItem.Image")));
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
             this.kháchHàngToolStripMenuItem.Text = "Khách Hàng";
             // 
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nhânViênToolStripMenuItem.Image")));
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
             this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
             // 
             // hóaĐơnToolStripMenuItem
@@ -169,19 +169,19 @@
             // hóaĐơnToolStripMenuItem1
             // 
             this.hóaĐơnToolStripMenuItem1.Name = "hóaĐơnToolStripMenuItem1";
-            this.hóaĐơnToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.hóaĐơnToolStripMenuItem1.Size = new System.Drawing.Size(161, 24);
             this.hóaĐơnToolStripMenuItem1.Text = "Hóa Đơn";
             // 
             // sảnPhẩmToolStripMenuItem1
             // 
             this.sảnPhẩmToolStripMenuItem1.Name = "sảnPhẩmToolStripMenuItem1";
-            this.sảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.sảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(161, 24);
             this.sảnPhẩmToolStripMenuItem1.Text = "Sản Phẩm";
             // 
             // kháchHàngToolStripMenuItem1
             // 
             this.kháchHàngToolStripMenuItem1.Name = "kháchHàngToolStripMenuItem1";
-            this.kháchHàngToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.kháchHàngToolStripMenuItem1.Size = new System.Drawing.Size(161, 24);
             this.kháchHàngToolStripMenuItem1.Text = "Khách Hàng";
             // 
             // báoCáoToolStripMenuItem
@@ -198,13 +198,13 @@
             // hàngTồnKhoToolStripMenuItem
             // 
             this.hàngTồnKhoToolStripMenuItem.Name = "hàngTồnKhoToolStripMenuItem";
-            this.hàngTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.hàngTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.hàngTồnKhoToolStripMenuItem.Text = "Hàng Tồn Kho";
             // 
             // doanhThuToolStripMenuItem
             // 
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.doanhThuToolStripMenuItem.Text = "Doanh Thu";
             // 
             // trợGiúpToolStripMenuItem
@@ -228,7 +228,7 @@
             // vàiNétToolStripMenuItem
             // 
             this.vàiNétToolStripMenuItem.Name = "vàiNétToolStripMenuItem";
-            this.vàiNétToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.vàiNétToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.vàiNétToolStripMenuItem.Text = "Vài Nét";
             // 
             // contextMenuStrip1
@@ -269,7 +269,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menufile);
             this.Font = new System.Drawing.Font("Magneto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "FormMain";
